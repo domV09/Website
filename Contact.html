@@ -1,49 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="WebPage_Style.css">
-
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
 </head>
-
 <body>
+    <form action=>
+    <div>
+        <label>Name</label>
+        <input>
+    </div>
+    <div>
+        <label>Password</label>
+        <input>
+    </div>
+    <button>Submit</button>
+    </form>
 
-<button onclick="myFunction()">Toggle dark mode</button>
-
-    <ul >
+     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="News.html">News</a></li>
-        <li><a href="Projects.html">Projects</a></li>
+        <li><a class="active" href="Projects.html">Projects</a></li>
         <li><a href="About.html">About</a></li>
-        <li style="float:right"><a class="active" href="Contact.html"> Contact </a></li>
+        <li style="float:right"><a href="contact.html"> Contact </a></li>
+
     </ul>
-    
-   <h3>Contact</h3>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-        </div>
 
 </body>
 </html>
